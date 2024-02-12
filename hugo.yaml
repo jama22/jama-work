@@ -1,0 +1,90 @@
+baseURL: http://jama.work/
+languageCode: en-us
+title: James Ma
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: About
+          url: about
+          weight: 10
+        - name: Archive
+          url: archives/
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+params:
+  env: production 
+  description: "James Ma's website"
+  author: "James Ma"
+
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+
+  params:
+    assets:
+      disableHLJS: true
+
+
+  homeInfoParams:
+      Title: "Hi there"
+      Content: >
+        👋 I'm James, a Product Manager. 
+
+  socialIcons:
+      - name: github
+        title: View Source on Github
+        url: "https://github.com/jama22"
+      - name: Twitter
+        title: Twitter
+        url: "https://twitter.com/pioverpi"
+      - name: LinkedIn
+        title: professional
+        url: "https://www.linkedin.com/in/james-ma-526a6012/"
+
+    
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+
